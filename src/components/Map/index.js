@@ -28,12 +28,24 @@ const Map = () => {
     setMap(map)
 
     const addMarker = () => {
-      new tt.Marker({
+      const offset = {
+        bottom: [0, -25],
+      }
+      const popup = new tt.Popup({ offset: offset }).setHTML('meow...')
+      const marker = new tt.Marker({
         draggable: true,
         element: element,
       })
         .setLngLat(nashville)
         .addTo(map)
+
+      marker.on('dragend', () => {
+        const lngLat = marker.getLngLat()
+        setLongitude(lngLat.lng)
+        setLatitude(lngLat.lat)
+      })
+
+      marker.setPopup(popup)
     }
     addMarker()
 
