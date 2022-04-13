@@ -1,0 +1,49 @@
+.navigation {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #333;
+
+  .nav-btn {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+
+    svg {
+      height: 30%;
+      padding-right: 5px;
+      color: #ffa500;
+
+      &:link {
+        color: #444;
+      }
+    }
+    h1 {
+      color: #ffa500;
+      font-size: 150%;
+      text-decoration: none;
+    }
+    &:hover {
+      background: antiquewhite;
+    }
+    &:link {
+      text-decoration: none;
+    }
+  }
+  .nav-btn.active {
+    background: #333;
+
+    &:hover {
+      background: antiquewhite;
+    }
+  }
+}

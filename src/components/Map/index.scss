@@ -1,0 +1,18 @@
+.map {
+  position: absolute;
+  background: rgb(246, 241, 224);
+  width: 100%;
+  height: auto;
+  top: 60px;
+  bottom: 60px;
+}
+
+.marker {
+  background-image: url('https://i.imgur.com/BXyeBoI.png');
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(246, 241, 224);
+  border-radius: 12px;
+  border: solid 1px black;
+}

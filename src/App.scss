@@ -1,0 +1,23 @@
+$primary-color: #ffa500;
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue';
+  font-size: 14px;
+}
